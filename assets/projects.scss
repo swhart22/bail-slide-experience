@@ -1,0 +1,289 @@
+/*reset*/
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	/*font-style: inherit;*/
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}	
+p {
+	padding:10px;
+}
+a {
+	text-decoration:underline;
+	color:inherit;
+	font-weight:700;
+}
+a:hover{
+	text-decoration:underline;
+	cursor:pointer;
+	opacity:.7;
+}
+/*entire story*/
+body {
+	background-color:#fafafa;
+	/*overflow-x:hidden;*/
+}
+.hover:hover{
+	opacity:.5
+}
+#justice-logo{
+	width: 200px;
+	margin:auto;
+	padding:0px 0px 0px 0px ;
+	float:left;
+	padding-bottom:100px;
+}
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 40px;
+	width:90%;
+	margin-left:5%;
+}
+
+h3	{
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	font-size: 30px;
+	padding:0px 0px 0px 10px;
+}
+
+
+.caption.narratives{
+	width:60%;
+}
+.image{
+	width:500px;
+}
+.right{
+	float:right;
+	margin-right:-20%;
+}
+.byline{
+	font-style:italic;
+}
+.body-text-wrapper {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size:16px;
+	width:700px;
+	margin:auto;
+	line-height:1.5;
+}
+
+.pullquote {
+	font-weight:100;
+	font-family: "proxima-nova",sans-serif;
+	font-size:30px;
+	border-top-style:solid;
+	border-top-width:2px;
+	border-top-color:#1A2526;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	border-bottom-color:#1A2526;
+}
+.pullquote.right{
+	width:350px;
+	float:right;
+	margin-left:10px;
+	margin-right:-30px;
+}
+.pullquote.left{
+	width:350px;
+	float:left;
+	margin-right:10px;
+	margin-left:-30px;
+}
+.pullquote.full {
+	width:100%;
+}
+/*in order of appearance*/
+#scene-00 {
+	background-color:#1A2526;
+	width:100%;
+	height:40px;
+}
+#logo {
+	height:25px; 
+	margin-top:7.5px;
+}
+.social-icon {
+	float:right;
+	margin-top:10px;
+}
+#sb,#do,#pt {
+	font-size:20px;
+	text-transform:uppercase;
+	font-weight:100;
+	font-family: "proxima-nova",sans-serif;
+	color:#fafafa;
+	margin-right:20px;
+}
+#tw {
+	margin-right:10px;
+}
+#fb {
+	margin-right:30px;
+}
+
+#headline {
+	font-size:90px;
+	font-weight:700;
+	font-family: 'Playfair Display', serif;
+	color:#fafafa;
+	padding:0px 0px 0px 10px;
+}
+#dek {
+	font-family: "proxima-nova",sans-serif;
+	border-top-color:#DA572A;
+	border-bottom-color:#DA572A;
+	border-top-width:2px;
+	border-bottom-width:2px;
+	border-top-style:solid;
+	border-bottom-style:solid;
+}
+
+/*responsive*/
+@media (max-width: 900px) {
+
+#justice-logo{
+	padding-bottom:0px;
+}
+	#chicago-map-about {
+	float:none;
+	width:90%;
+	margin-left:5%;
+}
+#card {
+	width:90%;
+	margin-left:5%;
+	height:auto;
+	padding:auto;
+}
+.buttons-wrapper {
+	width:90%;
+	margin-left:5%;
+}
+}
+@media (max-width: 700px) {
+ .body-text-wrapper{
+ 	width:90%;
+ 	margin-left:5%;
+ }
+ .pullquote.right {
+ 	width:90%;
+ 	margin-right:5%;
+ 	float:none;
+ }
+ .pullquote.left{
+ 	width:90%;
+ 	margin-left:5%;
+ 	float:none;
+ }
+ 	.image{
+		width:100%;
+	}
+	.caption{
+		width:90%;
+		margin-left:5%;
+		}
+	.right{
+		margin-right:0%;
+	}
+ #hed-dek {
+	width:90%;
+	margin-left:5%;
+}
+#headline {
+	font-size:40px;
+}
+
+}
+@media (max-width: 500px){
+
+	#hed-dek{
+		padding-top:40px;
+	}
+	#header_responsive{
+		display:block;
+		width:90%;
+		margin-left:5%;
+		margin-top:200px;
+	}
+	#justice-logo {
+		height:150px;
+		width:150px;
+		float:none;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:0px;
+	}
+	#series-style {
+		font-size:15px;
+		padding:0px 3px 0px 3px;
+		margin-left:10px;
+	}
+	#dek{
+		font-size:15px;
+	}
+	#sb {
+		display:none;
+	}
+	.label {
+	font-family: "proxima-nova",sans-serif;
+	font-size: 12px;
+	fill:#fafafa;
+	}
+	#chicago-map{
+		width:100%;
+	}
+	 #do,#pt{
+		font-size:12px;
+		margin-top:14px;
+		margin-right:5px;
+	}
+	.buttons-wrapper li{
+		width:48%;
+		margin:.5% .5% 1px 0;
+	}	
+	.pullquote.left{
+	
+	}
+	.special-pull{
+		float:none;
+		width:90%;
+		margin-left:5%;
+	}
+	.buttons-header-image{
+		width:100%;
+	}
+	.caption.narratives{
+		width:90%;
+		margin-left:5%;
+	}
+	
+}
+@media (max-width: 375px){
+	#hed-dek{
+		padding-top:80px;
+	}
+	#logo {
+	 height:15px;
+	 margin-top:12.5px;
+	}
+
+#header_responsive{
+	display:none;
+}
+	
+}
+/*clearfix*/
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}

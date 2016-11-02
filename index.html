@@ -1,0 +1,81 @@
+<html>
+  <head>
+  <link rel='stylesheet' href='assets/styles.css'>
+  <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript" src="tabletop.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script><link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<script src="https://use.typekit.net/fhr0vwf.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript">
+		//initiate tabletop.js
+		window.onload = function() { init() };
+
+  		var public_spreadsheet_url = 		'https://docs.google.com/spreadsheets/d/1RLYef-4vEiFj1hhLPFRmAMbidn1wyTlTZv9X1CZtbb4/pubhtml';
+
+  		function init() {
+   			Tabletop.init( { key: public_spreadsheet_url,
+                callback: showInfo,
+                simpleSheet: true } )
+  }
+
+  		function showInfo(data, tabletop) {
+   			console.log(data);
+   			console.log(data[0].text)
+   				
+   			for (i = 0; i < data.length; i++) {
+   			
+   			document.getElementById('story01').innerHTML += '<div class="slide"><div class="inner-wrapper"><div class="buttons"><button class="prev"><i class="left-arrow" title="arrow icon"></i></button><button class="next"><i class="right-arrow" title="arrow icon"></i></button></div><div><p class="quote">' + data[i].text + "</p></div></div></div>";
+   			
+   			var slide = document.getElementsByClassName('slide')[i].style.backgroundImage = "url('"+data[i].img+"')";
+   			
+   			$(document).ready(function() {
+					$("#story01 .slide").each(function(e) {
+        				if (e != 0)
+            		$(this).css('display','none');
+    			});
+    			
+    		});
+    			
+    			$(".next").click(function(){
+        			if ($("#story01 div.slide:visible").next().length != 0)
+            			$("#story01 div.slide:visible").next().css('display', 'block').prev().css('display','none');
+        			else {
+            			$("#story01 div.slide:visible").css('display','none');
+            			$("#story01 div.slide:first").css('display','block');
+        		}
+        		return false;
+    			});
+    
+    			$(".prev").click(function(){
+        			if ($("#story01 div.slide:visible").prev().length != 0)
+           			 	$("#story01 div.slide:visible").prev().css('display','block').next().css('display','none');
+        			else {
+            			$("#story01 div.slide:visible").css('display','none');
+            			$("#story01 div.slide:last").css('display','block');
+        		}
+        		return false;
+    			});
+   			
+   			
+  }
+  }
+
+    </script>
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth">
+    </script>
+  </head>
+  <body>
+  	<div class="test"></div>
+    <div id="authorize-div" style="display: none">
+      <span>Authorize access to Google Sheets API</span>
+      <!--Button for the user to click to initiate auth sequence -->
+      <button id="authorize-button" onclick="handleAuthClick(event)">
+        Authorize
+      </button>
+    </div>
+    <div id="story01"></div>
+    <script>
+
+</script>
+  </body>
+</html>
