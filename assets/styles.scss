@@ -16,7 +16,9 @@ $nova:"proxima-nova",sans-serif;
 	margin:2px;
 }
 
-
+#story01{
+	background-color:#000;
+}	
 #scene-00 {
 	background-color:$iw-dark;
 	width:100%;
@@ -57,6 +59,7 @@ $nova:"proxima-nova",sans-serif;
 .img{
 	width:100%;
 }
+
 .inner-wrapper{
 	@include vert;
 	display:flex;
@@ -64,7 +67,14 @@ $nova:"proxima-nova",sans-serif;
 	width:80%;
 	height:80%;
 	margin-left:10%; 
+	padding-top:10%;
 	
+}
+.inner-wrapper#landing{
+	flex-direction:row;
+	justify-content:center;
+	
+	flex-wrap:wrap;
 }
 .quote{
 	font-family: $nova;
@@ -74,7 +84,20 @@ $nova:"proxima-nova",sans-serif;
 	text-align:bottom;
 	background-color:rgba(0,0,0,.3);
 }
-
+.landing-nav{
+	width:200px;
+	height:150px;
+	display:inline-block;
+	background-color:#fafafa;
+	margin:1px;
+	font-family:$nova;
+	font-weight:700;
+	text-align:center;
+	padding-top:20px;
+}
+.landing-nav:hover{
+	opacity:.7;
+}
 .buttons{
 	padding:10px;
 }

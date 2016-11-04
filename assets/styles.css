@@ -263,6 +263,9 @@ h3 {
   overflow: auto;
   zoom: 1; }
 
+#story01 {
+  background-color: #000; }
+
 #scene-00 {
   background-color: #000000;
   width: 100%;
@@ -311,7 +314,13 @@ h3 {
   flex-direction: column-reverse;
   width: 80%;
   height: 80%;
-  margin-left: 10%; }
+  margin-left: 10%;
+  padding-top: 10%; }
+
+.inner-wrapper#landing {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .quote {
   font-family: "proxima-nova", sans-serif;
@@ -320,6 +329,20 @@ h3 {
   font-weight: 700;
   text-align: bottom;
   background-color: rgba(0, 0, 0, 0.3); }
+
+.landing-nav {
+  width: 200px;
+  height: 150px;
+  display: inline-block;
+  background-color: #fafafa;
+  margin: 1px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 20px; }
+
+.landing-nav:hover {
+  opacity: .7; }
 
 .buttons {
   padding: 10px; }
