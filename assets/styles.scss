@@ -70,7 +70,7 @@ $nova:"proxima-nova",sans-serif;
 	padding-top:10%;
 	
 }
-.inner-wrapper#landing{
+.landing{
 	flex-direction:row;
 	justify-content:center;
 	
@@ -98,7 +98,7 @@ $nova:"proxima-nova",sans-serif;
 .landing-nav:hover{
 	opacity:.7;
 }
-.buttons{
+a .next{
 	padding:10px;
 }
 .next{
@@ -189,7 +189,9 @@ padding:10px;
 	background-color:#1A2526;
 	overflow:hidden;
 }
-
+body{
+	overflow-y:hidden;
+}
 #credit-text{
 	font-family: "proxima-nova",sans-serif;
 	color:#fafafa;
@@ -211,6 +213,7 @@ padding:10px;
 	display:block;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow-y:hidden;
 }
 
 /* Default icon formatting */

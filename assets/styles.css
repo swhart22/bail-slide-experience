@@ -317,7 +317,7 @@ h3 {
   margin-left: 10%;
   padding-top: 10%; }
 
-.inner-wrapper#landing {
+.landing {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap; }
@@ -344,7 +344,7 @@ h3 {
 .landing-nav:hover {
   opacity: .7; }
 
-.buttons {
+a .next, a .prev {
   padding: 10px; }
 
 .next, .prev {
@@ -434,6 +434,9 @@ li {
   background-color: #1A2526;
   overflow: hidden; }
 
+body {
+  overflow-y: hidden; }
+
 #credit-text {
   font-family: "proxima-nova",sans-serif;
   color: #fafafa;
@@ -453,7 +456,8 @@ li {
   width: 100%;
   display: block;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow-y: hidden; }
 
 /* Default icon formatting */
 i {
